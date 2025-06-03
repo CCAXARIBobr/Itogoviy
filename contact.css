@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #808080;
+    background-image: url(Foto/fon3.jpg);
+    background-repeat: no-repeat;
+    background-size: 2065px;
+}
+
+.main-nav {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-content {
+    padding: 20px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.Main, .Catalog, .About, .Contacts {
+    color: blue;
+}
+
+.Main:hover, .Catalog:hover, .About:hover, .Contacts:hover {
+    color:darkcyan;
+}
+
+.infa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
