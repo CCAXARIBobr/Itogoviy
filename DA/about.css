@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(Foto/fonn.png);
+}
+
+.main-nav {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-content {
+    padding: 20px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.Main, .Catalog, .About, .Contacts {
+    color: blue;
+}
+
+.Main:hover, .Catalog:hover, .About:hover, .Contacts:hover {
+    color:darkcyan;
+}
+
+.about {
+    color: lemonchiffon;
+    font-size: 20px;
+}
+
+.Ofic {
+    padding: 0;
+}
+
+.da {
+    height: 410px;
+}
+
+.Offic {
+    color:blanchedalmond;
+    font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.review {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer; 
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; 
+  position: relative;
+}
+
+.review:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle; 
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.review-expanded {
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: 10; 
+  background-color: rgba(255, 255, 255, 0.95); 
+  padding: 30px;
+  overflow: auto; 
+  border: 2px solid #aaa;
+  border-radius: 12px;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

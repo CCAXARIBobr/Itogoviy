@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="nav-content">
+        <span class="name">MegaTecH</span>
+        <div class="nav-menu">
+            <a href="index.html" class="Main">Главная</a>
+            <a href="catalog.html" class="Catalog">Каталог</a>
+            <a href="About.html" class="About">О нас</a>
+            <a href="contact.html" class="Contacts">Контакты</a>
+        </div> 
+    </div>
+    
+    <div class="about">
+        <h1 class="Title"> О компании MegaTecH </h1>
+        <h3 class="pod-title"> История компании </h3>
+        <h4 class="description"> Компания MegaTecH производит гарнитуру для вашего удобства. Компания производит мышки, коврики, наушники и клавиатуры. </h4>
+        <h4 class="description"> Нашей компании уже 7 лет. Наши товары одни из самых дешёвых и качественных на рынке. Для наших мышек вы можете настроить специальные макросы для лучшего использования </h4>
+        <h3 class="pod-title"> Наша миссия </h3>
+        <h4 class="description"> Мы производим новые игровые девайсы по цене ниже средней для того, чтобы все могли с удобством поиграть в компьютер или ноутбук. </h4>
+        <h4 class="description"> Не все могут купить дорогие игровые клавиатуры, наушники и т.д, поэтому есть мы! </h4>
+        <h3 class="pod-title"> Команда </h3>
+        <h4 class="description"> У нас есть несколько команд: Дизнайнеры, Инженеры и Упаковщики (те, кто проверяют качество). </h4>
+        <h4 class="description"> Сейчас в общем, в компании работает 846 человек, а изначально было всего 3! </h4>
+    </div>
+
+    <div class="Ofic"></div>
+        <img src="Foto/Ofic.jpg" alt="" class="da">
+        <h4 class="Offic" > Офис дизнайнеров </h4>
+
+        <img src="Foto/sklad.jpg" alt="" class="da">
+        <h4 class="Offic" > Склад упаковщиков </h4>
+
+        <img src="Foto/ofic2.jpg" alt="" class="da">
+        <h4 class="Offic" > Офис инженеров </h4>
+    </div>
+
+    <div class="container">
+
+    <div class="review review1">
+      <img src="Foto/ava1.jpg" alt="Аватар клиента 1" class="avatar">
+      <p class="quote">"Отличный сервис! Быстро, качественно и профессионально. Рекомендую всем!"</p>
+    </div>
+
+    <div class="review review2">
+      <img src="Foto/ava2.jpg" alt="Аватар клиента 2" class="avatar">
+      <p class="quote">"Превосходная работа! Результат превзошел все мои ожидания. Обязательно обращусь еще раз."</p>
+    </div>
+
+    <div class="review review3">
+      <img src="Foto/ava3.jpg" alt="Аватар клиента 3" class="avatar">
+      <p class="quote">"Очень доволен результатом. Профессиональный подход и внимание к деталям."</p>
+    </div>
+
+  </div>
+
+    <script>
+        const reviews = document.querySelectorAll('.review');
+
+        reviews.forEach(review => {
+        review.addEventListener('click', () => {
+            review.classList.toggle('review-expanded');
+        });
+        });
+    </script>
+</body>
+</html>
