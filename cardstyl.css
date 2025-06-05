@@ -8,7 +8,8 @@ body {
     background-color: #f4f4f4;
     background-image: url(Foto/fon2.jpg);
     background-repeat: no-repeat;
-    background-size: 1950px
+    background-size: 1950px;
+    background-attachment: fixed; 
 }
 
 
@@ -60,102 +61,36 @@ body {
 .Tovari {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
 }
 
 
 .main-nav {
-    position: relative;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav-content {
-    padding: 20px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
-    color: whitesmoke;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed; top: 0; left: 0; width: 100%; height: 50px;
 }
 
 .Main, .Catalog, .About, .Contacts {
-    color: blue;
+  color: blue;
+  text-decoration: none; 
+  margin-right: 25px;
 }
 
 .Main:hover, .Catalog:hover, .About:hover, .Contacts:hover {
-    color:darkcyan;
-}
-
-
-
-
-
-
-
-
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    opacity: 0;
-    visibility:hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.modal.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 90%;
-    max-width: 800px;
-    transform: translateY(-20);
-    transition: transform 0.3s;
-}
-
-.modal.active.modal-content {
-    transform: translateY(0);
-}
-
-.modal-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal-title {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.close-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.modal-body {
-    padding: 25px;
+  color: darkcyan;
 }
 
 .about-content {
